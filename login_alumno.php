@@ -17,18 +17,18 @@
 </head>
 
 <body>
-   <img class="wave" src="img/background.jpg">
+   <img class="wave" src="img/fondo-estudiante.jpg">
    <div class="container">
       <div class="img">
-         <img src="img/colegio.jpg">
+         <img src="img/colegio.png">
       </div>
       <div class="login-content">
          <form method="post" action="">
-            <img src="img/profesor.jpg">
-            <h2 class="title">BIENVENIDO</h2>
+            <img src="img/alumno.png" class="circular-button">
+            <h2 class="title">BIENVENIDO ALUMNO</h2>
             <?php
             include("./modelo/conexion.php");           
-            include("controlador.php");
+            include("controlador_alumno.php");
             ?>
             <div class="input-div one">
                <div class="i">

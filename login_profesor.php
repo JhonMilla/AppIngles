@@ -20,15 +20,15 @@
    <img class="wave" src="img/background.jpg">
    <div class="container">
       <div class="img">
-         <img src="img/colegio.jpg">
+         <img src="img/colegio.png">
       </div>
       <div class="login-content">
          <form method="post" action="">
-            <img src="img/profesor.jpg">
-            <h2 class="title">BIENVENIDO</h2>
+            <img src="img/profesor.png" class="circular-button">
+            <h2 class="title">BIENVENIDO PROFESOR</h2>
             <?php
             include("conexion.php");
-            include("controlador.php");
+            include("controlador_profesor.php");
             ?>
             <div class="input-div one">
                <div class="i">

@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 article {
     position: relative;
     width: 250px;
@@ -12,56 +17,56 @@ article img:first-child {
   width: 100%;
 }
   
-  article img:last-child {
-    position: absolute;
-    width: 200px;
-    bottom: 0;
-    border-radius: 50%;
-    border: 10px solid;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transform: translateY(25%);
-    transition: 0.3s ease;
-    opacity: 0;
-  }
+article img:last-child {
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  border-radius: 50%;
+  border: 10px solid;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(25%);
+  transition: 0.3s ease;
+  opacity: 0;
+}
   
-  article:hover {
-    transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
-  }
+article:hover {
+  transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+}
   
-  article::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(
+article::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
       to bottom,
       transparent 10%,
       rgba(0, 0, 0, 0.5) 50%,
       rgba(0, 0, 0) 95%
-    );
-    opacity: 0;
-    transition: all 0.3s ease;
-  }
+  );
+  opacity: 0;
+  transition: all 0.3s ease;
+}
   
-  article:hover::before {
-    opacity: 1;
-  }
+article:hover::before {
+  opacity: 1;
+}
   
-  article:hover img:last-child {
-    opacity: 1;
-    transform: translateY(10%);
-  }
-
+article:hover img:last-child {
+  opacity: 1;
+  transform: translateY(10%);
+}
+/*login */
 .wrap{
   width: 100%;
   height: 100%;
   display: flex;
   align-items: start;
   justify-content: center;
-  background: linear-gradient(to bottom, rgb(0 0 0 / .25),rgb(0 0 0 / .25)),url(/img/fondo-ingles.jpg);
+  background: url(/img/fondo-ingles.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -71,8 +76,29 @@ article img:first-child {
   width: 50%;
   text-align: center;
   font-size: 1.5rem;
+  margin-bottom: 150px;
 }
 
 img{
-  text-align: center;
+  text-align: center
+}
+.circular-button {
+  display: inline-block;
+  overflow: hidden; /* Ocultar el desbordamiento de la imagen circular */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Hacer el botón circular */
+  border: 5px solid #000000; /* Quitar el borde del botón */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}
+
+.circular-button img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Hacer la imagen circular */
+  transition: transform 0.3s ease-in-out; /* Transición suave al hacer hover */
+}
+
+.circular-button:hover img {
+  transform: scale(1.1); /* Escalar la imagen al hacer hover */
 }

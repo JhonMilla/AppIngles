@@ -11,6 +11,7 @@
 
 <body>
     <div class="wrapper">
+    <h1>PANEL PRINCIPAL</h1>
         <div class="container">
             <input type="radio" name="slide" id="c1" checked>
             <label for="c1" class="card">
@@ -18,7 +19,7 @@
                     <div class="icon">1</div>
                     <div class="description">
                         <h4>Animales</h4>
-                        <a href="/index.php">Ver animales</a>
+                        <a href="/animales.php">Ver animales</a>
                     </div>
                 </div>
             </label>
@@ -52,6 +53,61 @@
                     <div class="description">
                         <h4>Vocales</h4>
                         <a href="/vocal.php">Ver vocales</a>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c5" checked>
+            <label for="c5" class="card">
+                <div class="row">
+                    <div class="icon">5</div>
+                    <div class="description">
+                        <h4>Colores</h4>
+                        <a href="/color.php">Ver colores</a>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c6" checked>
+            <label for="c6" class="card">
+                <div class="row">
+                    <div class="icon">6</div>
+                    <div class="description">
+                        <h4>Numero</h4>
+                        <a href="/numero.php">Ver numeros</a>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c7" checked>
+            <label for="c7" class="card">
+                <div class="row">
+                    <div class="icon">7</div>
+                    <div class="description">
+                        <h4>Vegetales</h4>
+                        <a href="/vegetales.php">Ver vegetales</a>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c8" checked>
+            <label for="c8" class="card">
+                <div class="row">
+                    <div class="icon">8</div>
+                    <div class="description">
+                        <h4>Juegos</h4>
+                        <a href="./quiz/admin/login.php">Juegos</a>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c9" checked>
+            <label for="c9" class="card">
+                <div class="row">
+                    <div class="icon">9</div>
+                    <div class="description">
+                        <h4>SALIR</h4>
+                        <a href="./inicio.php">SALIR</a>
                     </div>
                 </div>
             </label>
